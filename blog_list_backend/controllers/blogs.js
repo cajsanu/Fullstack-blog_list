@@ -1,4 +1,3 @@
-
 const blogRouter = require('express').Router()
 const Blog = require('../models/blog')
 
@@ -9,8 +8,10 @@ blogRouter.get('/', async (request, response) => {
 })
 
 blogRouter.post('/', async (request, response) => {
+  console.log("back", request.body)
   try {
   const user = request.user
+  console.log("user", user)
 
   if (!request.body.title || !request.body.url) {
     response.status(400).json("A blog must have a title and a URL")
