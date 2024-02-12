@@ -3,9 +3,14 @@ module.exports = {
     browser: true,
     commonjs: true,
     es2021: true,
-    node: true
+    node: true,
+    'jest/globals': true,
+    "cypress/globals": true
   },
-  extends: 'airbnb',
+  extends: [
+    'eslint:recommended',
+  ],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
   overrides: [
     {
       env: {
@@ -22,6 +27,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
+  plugins: ["react", "jest", "cypress"],
   rules: {
   },
 };

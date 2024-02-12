@@ -1,25 +1,25 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const blogSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: true
+    required: true,
   },
   author: {
     type: String,
-    required: true
+    required: true,
   },
   url: {
     type: String,
     required: true,
-    minlenght: 6
+    minlenght: 6,
   },
   likes: Number,
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
-  }
-})
+  },
+});
 
 blogSchema.set('toJSON', {
   transform(document, returnedObject) {
@@ -32,5 +32,4 @@ blogSchema.set('toJSON', {
 module.exports = mongoose.model('Blog', blogSchema);
 
 // The 'Blog'-name is just so that mongoose knows which collection to connect to. Importing this model
-// somewehre else just makes an object with functions for accessing and altering the data in the collection. 
-
+// somewehre else just makes an object with functions for accessing and altering the data in the collection.

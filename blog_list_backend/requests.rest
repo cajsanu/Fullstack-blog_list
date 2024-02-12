@@ -11,7 +11,7 @@ Content-Type: application/json
 
 POST  http://localhost:3003/api/blog_list
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IktueXR0ZSIsImlkIjoiNjViMjc2YWJlMDAyMjA3ZjIwZjVmYTY1IiwiaWF0IjoxNzA2NjE1Njk2LCJleHAiOjE3MDY2MTkyOTZ9.TVD3DNG-KchmYq27MN3nyFsxI0fW2fc5VggXJwSmDQI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IktueXR0ZSIsImlkIjoiNjViMjc2YWJlMDAyMjA3ZjIwZjVmYTY1IiwiaWF0IjoxNzA2NjE1Njk2LCJleHAiOjE3MDY2MTkyOTZ9.TVD3DNG-KchmYq27MN3nyFsxI0fW2fc5VggXJwSmDQI
  
 {
        "title": "A new blog on the rise",
@@ -38,4 +38,4 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Iktue
       
   #   }
 
-    # Authorization: bearer 
+    # Authorization: Bearer 
